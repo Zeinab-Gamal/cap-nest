@@ -6,6 +6,7 @@ import { PropertiesSection } from './components/properties-section/properties-se
 import { BenefitsSection } from './components/benefits-section/benefits-section';
 import { StatsSection } from './components/stats-section/stats-section';
 import { TestimonialsSection } from './components/testimonials-section/testimonials-section';
+import { CTASection } from './components/ctasection/ctasection';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { TestimonialsSection } from './components/testimonials-section/testimoni
     BenefitsSection,
     StatsSection,
     TestimonialsSection,
+    CTASection,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

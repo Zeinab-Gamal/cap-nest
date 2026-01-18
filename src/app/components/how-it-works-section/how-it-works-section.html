@@ -1,0 +1,48 @@
+ <section id="how-it-works" class="section-padding bg-cream">
+   <div class="container-main">
+     <div class="text-center max-w-2xl mx-auto mb-16">
+       <span class="text-gold font-body text-sm font-medium tracking-wider uppercase">
+         Simple Process
+       </span>
+       <h2 class="font-heading text-4xl md:text-5xl font-semibold text-navy mt-4 mb-6">
+         How Fractional Investing Works
+       </h2>
+       <p class="text-muted-foreground font-body text-lg">
+         Start building your real estate portfolio in three simple steps.
+         No complexity, no hassle.
+       </p>
+     </div>
+
+     <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+       @for (step of steps; track $index; let i = $index) {
+       <div class="relative group">
+         @if(i < steps.length - 1){ <!-- <div
+           class="hidden md:block absolute top-16 left-[60%] w-full h-[2px] bg-gradient-to-r from-gold/50 to-transparent">
+           -->
+
+           }
+           <div
+             class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-shadow duration-300 relative overflow-hidden">
+
+             <span
+               class="absolute -top-4 right-0 font-heading text-[120px] font-bold text-navy/5 leading-none select-none ">
+               {{step.number}}
+             </span>
+
+             <div
+               class="w-16 h-16 rounded-xl bg-linear-to-r from-gold to-cream flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+               <fa-icon [icon]="step.icon" class="text-2xl text-navy" />
+             </div>
+
+             <h3 class="font-heading text-2xl font-semibold text-navy mb-4">
+               {{step.title}}
+             </h3>
+             <p class="text-muted-foreground font-body leading-relaxed">
+               {{step.description}}
+             </p>
+           </div>
+       </div>
+       }
+     </div>
+   </div>
+ </section>

@@ -1,0 +1,41 @@
+<section id="benefits" class="section-padding bg-linear-to-b from-navy to-navy-light relative overflow-hidden">
+
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="container-main relative z-10">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-gold font-body text-sm font-medium tracking-wider uppercase">
+        Why Choose CapNest
+      </span>
+      <h2 class="font-heading text-4xl md:text-5xl font-semibold text-cream mt-4 mb-6">
+        Benefits of Fractional Ownership
+      </h2>
+      <p class="text-cream/70 font-body text-lg">
+        Experience the advantages of real estate investment without the traditional obstacles.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (benefit of benefits; track $index ; let i = $index) {
+      <div
+        class="group p-8 rounded-2xl bg-cream/5 border border-cream/10 backdrop-blur-sm hover:bg-cream/10 hover:border-gold/30 transition-all duration-300"
+        [style.animation-delay]="i * 0.1 + 's'">
+        <div
+          class="w-14 h-14 rounded-xl bg-gold/20 flex items-center justify-center mb-6 group-hover:bg-gold/30 transition-colors duration-300">
+          <fa-icon [icon]="benefit.icon" class="text-xl text-gold" />
+        </div>
+
+        <h3 class="font-heading text-xl font-semibold text-cream mb-3">
+          {{benefit.title}}
+        </h3>
+        <p class="text-cream/60 font-body leading-relaxed">
+          {{benefit.description}}
+        </p>
+      </div>
+      }
+    </div>
+  </div>
+</section>

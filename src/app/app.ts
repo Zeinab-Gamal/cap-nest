@@ -3,10 +3,11 @@ import { Navbar } from './components/navbar/navbar';
 import { HeroSection } from './components/hero-section/hero-section';
 import { HowItWorksSection } from './components/how-it-works-section/how-it-works-section';
 import { PropertiesSection } from './components/properties-section/properties-section';
+import { BenefitsSection } from './components/benefits-section/benefits-section';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, HeroSection, HowItWorksSection, PropertiesSection],
+  imports: [Navbar, HeroSection, HowItWorksSection, PropertiesSection, BenefitsSection],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

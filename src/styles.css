@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "./assets/styles/buttons.css";
+@import './assets/styles/buttons.css';
 
 @theme {
   --color-background: hsl(40 33% 98%);
@@ -60,49 +60,59 @@
 }
 
 * {
-    @apply border-border;
-  }
+  @apply border-border;
+}
 
-  body {
-    @apply bg-background text-foreground font-body antialiased;
-  }
+body {
+  @apply bg-background text-foreground font-body antialiased;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
 
-  .font-heading {
-    font-family: var(--font-heading);
-  }
-  
-  .font-body {
-    font-family: var(--font-body);
-  }
+.font-heading {
+  font-family: var(--font-heading);
+}
 
-  .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
-  }
+.font-body {
+  font-family: var(--font-body);
+}
 
-  .bg-gradient-hero {
-    background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--navy-light)) 100%);
-  }
+.text-gradient-gold {
+  @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
+}
 
-  .bg-gradient-gold {
-    background: linear-gradient(135deg, hsl(var(--gold-dark)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-light)) 100%);
-  }
+.bg-gradient-hero {
+  background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--navy-light)) 100%);
+}
 
-  .shadow-elegant {
-    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
-  }
+.bg-gradient-gold {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--gold-dark)) 0%,
+    hsl(var(--gold)) 50%,
+    hsl(var(--gold-light)) 100%
+  );
+}
 
-  .shadow-card {
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
-  }
+.shadow-elegant {
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+}
 
-  .section-padding {
-    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
-  }
+.shadow-card {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
 
-  .container-main {
-    @apply max-w-7xl mx-auto;
-  }
+.section-padding {
+  @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+}
+
+.container-main {
+  @apply max-w-7xl mx-auto;
+}

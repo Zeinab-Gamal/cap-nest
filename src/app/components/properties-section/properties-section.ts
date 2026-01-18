@@ -1,0 +1,50 @@
+import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faLocationDot, faUsers, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+
+@Component({
+  selector: 'app-properties-section',
+  imports: [FontAwesomeModule],
+  templateUrl: './properties-section.html',
+  styleUrl: './properties-section.css',
+})
+export class PropertiesSection {
+  locationIcon = faLocationDot;
+  usersIcon = faUsers;
+  arrowTrendUpIcon = faArrowTrendUp;
+  properties = [
+    {
+      image: '/assets/imgs/property-1.jpg',
+      title: 'Oakwood Estates',
+      location: 'Austin, Texas',
+      price: '$1,200,000',
+      minInvestment: '$500',
+      funded: 72,
+      investors: 148,
+      returns: '12.4%',
+      type: 'Residential',
+    },
+    {
+      image: '/assets/imgs/property-2.jpg',
+      title: 'Skyline Penthouse',
+      location: 'Miami, Florida',
+      price: '$2,850,000',
+      minInvestment: '$1,000',
+      funded: 45,
+      investors: 89,
+      returns: '15.8%',
+      type: 'Luxury',
+    },
+    {
+      image: '/assets/imgs/property-3.jpg',
+      title: 'Mediterranean Villa',
+      location: 'San Diego, California',
+      price: '$1,950,000',
+      minInvestment: '$750',
+      funded: 88,
+      investors: 234,
+      returns: '11.2%',
+      type: 'Vacation',
+    },
+  ];
+}

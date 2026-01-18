@@ -5,6 +5,7 @@ import { HowItWorksSection } from './components/how-it-works-section/how-it-work
 import { PropertiesSection } from './components/properties-section/properties-section';
 import { BenefitsSection } from './components/benefits-section/benefits-section';
 import { StatsSection } from './components/stats-section/stats-section';
+import { TestimonialsSection } from './components/testimonials-section/testimonials-section';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { StatsSection } from './components/stats-section/stats-section';
     PropertiesSection,
     BenefitsSection,
     StatsSection,
+    TestimonialsSection,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

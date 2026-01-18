@@ -7,6 +7,7 @@ import { BenefitsSection } from './components/benefits-section/benefits-section'
 import { StatsSection } from './components/stats-section/stats-section';
 import { TestimonialsSection } from './components/testimonials-section/testimonials-section';
 import { CTASection } from './components/ctasection/ctasection';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { CTASection } from './components/ctasection/ctasection';
     StatsSection,
     TestimonialsSection,
     CTASection,
+    Footer,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

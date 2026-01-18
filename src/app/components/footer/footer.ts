@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faF, faW, faInbox, faY } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -37,9 +37,8 @@ export class Footer {
   };
 
   socialLinks = [
-    { icon: faY, href: '#' },
-    { icon: faInbox, href: '#' },
-    { icon: faW, href: '#' },
-    { icon: faF, href: '#' },
+    { icon: faTwitter, href: '#' },
+    { icon: faInstagram, href: '#' }, 
+    { icon: faFacebookF, href: '#' },
   ];
 }

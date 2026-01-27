@@ -27,9 +27,9 @@
   --color-accent: hsl(30 41% 64%);
   --color-accent-foreground: hsl(222 47% 11%);
 
-  --color-gold: hsl(30 41% 64%);
-  --color-gold-light: hsl(35 45% 75%);
-  --color-gold-dark: hsl(28 38% 50%);
+  --color-gold: #197a3d;
+  --color-gold-light: #39e374;
+  --color-gold-dark: #004d1c;
 
   --color-navy: hsl(222 47% 11%);
   --color-navy-light: hsl(220 30% 20%);

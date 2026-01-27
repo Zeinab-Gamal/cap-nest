@@ -3,34 +3,34 @@
   @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 font-body;
 }
 .btn-default {
-  @apply bg-primary text-primary-foreground hover:bg-primary/90
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
 }
 .btn-destructive {
-  @apply bg-destructive text-destructive-foreground hover:bg-destructive/90
+  @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
 }
 .btn-outline {
-  @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground
+  @apply border border-input bg-background hover:bg-gold-dark hover:text-white;
 }
 .btn-secondary {
-  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
 }
 .btn-ghost {
-  @apply hover:bg-accent hover:text-accent-foreground
+  @apply hover:bg-accent hover:text-accent-foreground;
 }
 .btn-link {
-  @apply text-primary underline-offset-4 hover:underline
+  @apply text-primary underline-offset-4 hover:underline;
 }
 .btn-hero {
-  @apply bg-linear-to-r from-gold-dark via-gold to-gold-light text-navy font-semibold hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98]
+  @apply bg-linear-to-r from-gold  to-gold-light text-navy font-semibold hover:shadow-lg hover:shadow-gold/30 hover:scale-[1.02] active:scale-[0.98];
 }
 .btn-heroOutline {
-  @apply border-2 border-cream/30 text-cream hover:bg-cream/10 hover:border-cream/50 backdrop-blur-sm
+  @apply border-2 border-cream/30 text-cream hover:bg-cream/10 hover:border-cream/50 backdrop-blur-sm;
 }
 .btn-gold {
-  @apply bg-gold text-navy font-semibold hover:bg-gold-light hover:shadow-md
+  @apply bg-gold-dark text-cream font-semibold hover:bg-gold hover:shadow-md;
 }
 .btn-navy {
-  @apply bg-navy text-cream hover:bg-navy-light
+  @apply bg-navy text-cream hover:bg-navy-light;
 }
 
 /* Size Variants */

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+
+import { faEnvelope, faHotel } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -10,17 +12,12 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 })
 export class Footer {
   footerLinks = {
-    company: [
-      { name: 'About Us', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Blog', href: '#' },
-    ],
-    invest: [
-      { name: 'Browse Properties', href: '#' },
-      { name: 'How It Works', href: '#' },
-      { name: 'Pricing', href: '#' },
-      { name: 'FAQ', href: '#' },
+    Platform: [
+      { name: 'How It Works', href: '#how-it-works' },
+      { name: 'Why CapNest', href: '#' },
+      { name: 'Properties', href: '#properties' },
+      { name: 'Join Us', href: '#about' },
+      { name: 'Testimonials', href: '#benefits' },
     ],
     legal: [
       { name: 'Terms of Service', href: '#' },
@@ -32,13 +29,15 @@ export class Footer {
       { name: 'Help Center', href: '#' },
       { name: 'Contact Us', href: '#' },
       { name: 'Investor Resources', href: '#' },
-      { name: 'API Documentation', href: '#' },
     ],
   };
 
   socialLinks = [
-    { icon: faTwitter, href: '#' },
-    { icon: faInstagram, href: '#' }, 
-    { icon: faFacebookF, href: '#' },
+    { icon: faLinkedin, href: 'https://www.linkedin.com/company/capnest' },
+    { icon: faFacebookF, href: 'https://www.facebook.com/cap.nest/' },
+    { icon: faInstagram, href: 'https://www.instagram.com/capnest' },
+    { icon: faMedium, href: 'https://medium.com/@capnest' },
+    { icon: faHotel, href: 'https://www.crunchbase.com/organization/capnest' },
+    { icon: faEnvelope, href: 'info@capnest.sa' },
   ];
 }

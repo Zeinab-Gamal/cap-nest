@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faSearch, faPieChart, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { faUserPlus, faHouseCircleCheck, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-how-it-works-section',
@@ -11,25 +11,24 @@ import { faSearch, faPieChart, faArrowTrendUp } from '@fortawesome/free-solid-sv
 export class HowItWorksSection {
   steps = [
     {
-      icon: faSearch,
+      icon: faUserPlus,
       number: '01',
-      title: 'Browse Properties',
+      title: 'Sign Up & Join',
       description:
-        'Explore our curated selection of premium real estate investments, from urban apartments to vacation properties.',
+        'Create your free account and fill in your basic details to join the waiting list.',
     },
     {
-      icon: faPieChart,
+      icon: faHouseCircleCheck,
       number: '02',
-      title: 'Choose Your Share',
+      title: 'Choose Property',
       description:
-        'Select the percentage of ownership that fits your budget. Start with as little as $500 and build from there.',
+        'Browse the first available property through Digishares and choose your investment share.',
     },
     {
       icon: faArrowTrendUp,
       number: '03',
-      title: 'Earn Returns',
-      description:
-        'Receive proportional rental income monthly and benefit from property value appreciation over time.',
+      title: 'Invest & Earn',
+      description: 'Invest and start earning monthly returns from your real estate investments.',
     },
   ];
 }

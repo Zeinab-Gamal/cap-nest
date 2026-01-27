@@ -10,8 +10,8 @@
          </h2>
        </div>
        <Button
-         class="btn btn-outline self-start md:self-auto border-navy text-navy hover:bg-navy hover:text-cream px-6 py-3">
-         View All Properties
+         class="btn border border-input bg-background self-start md:self-auto  text-gold-dark px-6 py-3 disabled ">
+         More properties coming soon
        </Button>
      </div>
 
@@ -23,7 +23,7 @@
            <img [src]="property.image" alt={{property.title}}
              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
            <div class="absolute top-4 left-4">
-             <span class="px-3 py-1 bg-gold text-navy text-xs font-semibold rounded-full">
+             <span class="px-3 py-1 bg-gold-light text-navy text-xs font-semibold rounded-full">
                {{property.type}}
              </span>
            </div>

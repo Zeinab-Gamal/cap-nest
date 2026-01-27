@@ -21,7 +21,7 @@ export class BenefitsSection {
       icon: faWallet,
       title: 'Low Minimum Investment',
       description:
-        'Start building your portfolio with as little as $500. No massive down payments required.',
+        'Start building your portfolio from just 100 SAR. No massive down payments required.',
     },
     {
       icon: faBarChart,
@@ -31,7 +31,7 @@ export class BenefitsSection {
     },
     {
       icon: faShield,
-      title: 'SEC Regulated',
+      title: 'REGA Regulated',
       description:
         'All investments are fully compliant with SEC regulations, ensuring your money is protected.',
     },

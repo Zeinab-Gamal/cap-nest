@@ -1,38 +1,53 @@
 <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-  [ngClass]="isScrolled() ? 'bg-gold-dark backdrop-blur-md shadow-elegant py-4' : 'bg-transparent py-6'">
-  <div class="container-main flex items-center justify-between px-6 md:px-12 lg:px-24">
+  [ngClass]="isScrolled() ? 'bg-cream-dark text-black backdrop-blur-md shadow-elegant py-4 ' : 'bg-transparent py-6'">
+  <div class="container-main flex items-center justify-between px-6  lg:px-24">
     <a href="#" class="flex items-center gap-2">
       <div class="w-10 h-10 rounded-lg bg-linear-to-r from-gold to-gold-light flex items-center justify-center">
         <span class="font-heading font-bold  text-xl">C</span>
       </div>
-      <span class="font-heading text-2xl font-semibold text-cream"> CapNest </span>
+      <span class="font-heading text-2xl font-semibold transition-all "
+        [ngClass]="isScrolled() ? 'text-dark' :'text-cream' ">
+        CapNest </span>
     </a>
 
-    <div class="hidden md:flex items-center gap-8">
+    <div class="hidden lg:flex items-center gap-8">
       @for (link of navLinks; track $index) {
-      <a (href)="link.href" class="text-cream/80 hover:text-gold transition-colors duration-200 font-body text-sm">
+      <a (href)="link.href" class=" hover:text-gold transition-colors duration-200 font-body text-md cursor-pointer"
+        [ngClass]="isScrolled() ? 'text-dark' :'text-white' ">
         {{ link.name }}
       </a>
       }
+
     </div>
 
-    <div class="hidden md:flex items-center gap-4">
+    <div class="hidden lg:flex items-center gap-4">
       <!-- <button class="btn btn-heroOutline btn-normal"> Login </button> -->
+      <div class=" hover:text-gold transition-colors duration-200 font-body text-lg cursor-pointer flex gap-1.5"
+        [ngClass]="isScrolled() ? 'text-dark' :'text-white' ">
+        <fa-icon [icon]="globe"></fa-icon>
+        <span>AR</span>
+      </div>
       <a href="https://zfrmz.sa/PnG9yx0hykI0YxroY6Mi" class="btn btn-hero btn-normal"> Waiting List </a>
     </div>
 
-    <button class="md:hidden text-cream" (click)="toggleMobileMenu()">=</button>
+    <fa-icon [icon]="bars" class="lg:hidden font-extrabold text-lg"
+      [ngClass]=" isScrolled() ? 'text-dark' :'text-white' " (click)=" toggleMobileMenu()"></fa-icon>
   </div>
 
   @if(isMobileMenuOpen()) {
-  <div class="md:hidden bg-navy/95 backdrop-blur-md border-t border-cream/10 mt-4">
+  <div class="lg:hidden bg-cream-dark/95 backdrop-blur-md border-t border-cream/10 mt-4 ">
     <div class="px-6 py-6 flex flex-col gap-4">
       @for(link of navLinks; track $index){
-      <a (href)="link.href" class="text-cream/80 hover:text-gold transition-colors duration-200 font-body py-2"
+      <a (href)="link.href" class=" hover:text-gold transition-colors duration-200 font-body py-2"
         (click)="isMobileMenuOpen.set(false)">
         {{link.name}}
       </a>
+
       }
+      <div class=" hover:text-gold transition-colors duration-200 font-body py-2">
+        <fa-icon [icon]="globe"></fa-icon>
+        <span>AR</span>
+      </div>
       <div class="flex flex-col gap-3 pt-4 border-t border-cream/10">
         <!-- <button class="btn btn-heroOutline btn-lg"> Login </button> -->
         <a href="https://zfrmz.sa/PnG9yx0hykI0YxroY6Mi" class="btn btn-hero btn-lg"> Waiting List </a>

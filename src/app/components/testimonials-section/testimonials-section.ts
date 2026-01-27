@@ -13,28 +13,28 @@ export class TestimonialsSection {
   starIcon = faStar;
   testimonials = [
     {
-      name: 'Sarah Mitchell',
-      role: 'Tech Entrepreneur',
+      name: 'Fatima Al-Ali',
+      role: 'Real Estate Investor, Riyadh',
       content:
-        "CapNest made real estate investing accessible for me. I've diversified across 5 properties with returns that beat my stock portfolio.",
+        'I was looking for a safe way to invest in Saudi real estate. CapNest made it so easy. I invested 500 SAR in a property in Riyadh and receive a steady monthly return. I recommend it to anyone wanting to start real estate investing.',
       rating: 5,
-      avatar: 'SM',
+      avatar: 'FA',
     },
     {
-      name: 'David Chen',
-      role: 'Financial Analyst',
+      name: 'Khalid Al-Ahmad',
+      role: 'Software Engineer, Jeddah',
       content:
-        'As someone in finance, I was skeptical at first. But the transparency and consistent returns have made me a believer. Highly recommend.',
+        "As a young professional starting my career, I didn't think I could invest in real estate. CapNest changed that. Now I have a diversified portfolio of 3 properties in different cities. The returns are much better than a savings account.",
       rating: 5,
-      avatar: 'DC',
+      avatar: 'KA',
     },
     {
-      name: 'Maria Rodriguez',
-      role: 'Small Business Owner',
+      name: 'Noura Al-Salem',
+      role: 'Teacher, Dammam',
       content:
-        'The monthly rental income has become a reliable passive income stream. The platform is intuitive and the team is incredibly responsive.',
+        'I wanted to build an additional income source for the future. CapNest is a trusted platform regulated by REGA, which is very important to me. I invested 1000 SAR and receive monthly income that helps me with better financial planning. Thank you CapNest!',
       rating: 5,
-      avatar: 'MR',
+      avatar: 'NS',
     },
   ];
   getStars(rating: number): number[] {

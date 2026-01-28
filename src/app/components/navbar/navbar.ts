@@ -11,11 +11,11 @@ import { FormModal } from "../form-modal/form-modal";
 })
 export class Navbar {
   navLinks = [
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Why CapNest', href: '#benefits' },
-    { name: 'Properties', href: '#properties' },
-    { name: 'Join Us', href: '#joinus' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'navLinks.howItWorks', href: '#how-it-works' },
+    { name: 'navLinks.whyCapNest', href: '#benefits' },
+    { name: 'navLinks.properties', href: '#properties' },
+    { name: 'navLinks.joinUs', href: '#joinus' },
+    { name: 'navLinks.testimonials', href: '#testimonials' },
   ];
 
   showFormModal = signal<boolean>(false);

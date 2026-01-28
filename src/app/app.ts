@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Navbar } from './components/navbar/navbar';
 import { HeroSection } from './components/hero-section/hero-section';
 import { HowItWorksSection } from './components/how-it-works-section/how-it-works-section';
@@ -8,6 +8,7 @@ import { StatsSection } from './components/stats-section/stats-section';
 import { TestimonialsSection } from './components/testimonials-section/testimonials-section';
 import { CTASection } from './components/ctasection/ctasection';
 import { Footer } from './components/footer/footer';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -26,4 +27,12 @@ import { Footer } from './components/footer/footer';
 })
 export class App {
   protected readonly title = signal('cap-nest');
+
+   private translate = inject(TranslateService);
+
+  constructor() {
+      this.translate.addLangs(['ar', 'en']);
+      this.translate.setFallbackLang('en');
+      this.translate.use('en');
+  }
 }

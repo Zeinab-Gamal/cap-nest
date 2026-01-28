@@ -17,7 +17,6 @@ import { Footer } from './components/footer/footer';
     HowItWorksSection,
     PropertiesSection,
     BenefitsSection,
-    StatsSection,
     TestimonialsSection,
     CTASection,
     Footer,

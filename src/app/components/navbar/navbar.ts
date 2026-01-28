@@ -2,10 +2,10 @@ import { Component, HostListener, signal } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe, faBars } from '@fortawesome/free-solid-svg-icons';
-import { log } from 'console';
+import { FormModal } from "../form-modal/form-modal";
 @Component({
   selector: 'app-navbar',
-  imports: [NgClass, FontAwesomeModule],
+  imports: [NgClass, FontAwesomeModule, FormModal],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
@@ -18,6 +18,7 @@ export class Navbar {
     { name: 'Testimonials', href: '#testimonials' },
   ];
 
+  showFormModal = signal<boolean>(false);
   isScrolled = signal<boolean>(false);
   isMobileMenuOpen = signal<boolean>(false);
   globe = faGlobe;
@@ -32,5 +33,9 @@ export class Navbar {
   }
   goToSection(id: string) {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toggleFormModal() {
+    this.showFormModal.set(!this.showFormModal());
   }
 }

@@ -4,11 +4,11 @@ import { HeroSection } from './components/hero-section/hero-section';
 import { HowItWorksSection } from './components/how-it-works-section/how-it-works-section';
 import { PropertiesSection } from './components/properties-section/properties-section';
 import { BenefitsSection } from './components/benefits-section/benefits-section';
-import { StatsSection } from './components/stats-section/stats-section';
 import { TestimonialsSection } from './components/testimonials-section/testimonials-section';
 import { CTASection } from './components/ctasection/ctasection';
 import { Footer } from './components/footer/footer';
 import { TranslateService } from '@ngx-translate/core';
+import { LangService } from '../lang.service';
 
 @Component({
   selector: 'app-root',
@@ -27,12 +27,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class App {
   protected readonly title = signal('cap-nest');
-
-   private translate = inject(TranslateService);
+  private lang = inject(LangService);
 
   constructor() {
-      this.translate.addLangs(['ar', 'en']);
-      this.translate.setFallbackLang('en');
-      this.translate.use('en');
+    this.lang.init();
   }
+
 }

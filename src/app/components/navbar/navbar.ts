@@ -1,15 +1,19 @@
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FormModal } from "../form-modal/form-modal";
+import { TranslatePipe } from '@ngx-translate/core';
+import { LangService } from '../../../lang.service';
 @Component({
   selector: 'app-navbar',
-  imports: [NgClass, FontAwesomeModule, FormModal],
+  imports: [NgClass, FontAwesomeModule, FormModal, TranslatePipe],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
 export class Navbar {
+  lang = inject(LangService);
+
   navLinks = [
     { name: 'navLinks.howItWorks', href: '#how-it-works' },
     { name: 'navLinks.whyCapNest', href: '#benefits' },
@@ -37,5 +41,9 @@ export class Navbar {
 
   toggleFormModal() {
     this.showFormModal.set(!this.showFormModal());
+  }
+
+  switchLang(lang: 'en' | 'ar') {
+    this.lang.switch(lang);
   }
 }

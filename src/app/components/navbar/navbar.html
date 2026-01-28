@@ -15,19 +15,18 @@
       <a [href]="link.href" (click)="goToSection(link.href)"
         class=" hover:text-gold transition-colors duration-200 font-body text-md cursor-pointer"
         [ngClass]="isScrolled() ? 'text-dark' :'text-white' ">
-        {{ link.name }}
+        {{ link.name | translate }}
       </a>
       }
-
     </div>
 
     <div class="hidden lg:flex items-center gap-4">
       <!-- <button class="btn btn-heroOutline btn-normal"> Login </button> -->
-      <div class=" hover:text-gold transition-colors duration-200 font-body text-lg cursor-pointer flex gap-1.5"
-        [ngClass]="isScrolled() ? 'text-dark' :'text-white' ">
+      <button class=" hover:text-gold transition-colors duration-200 font-body text-lg cursor-pointer flex gap-1.5"
+        [ngClass]="isScrolled() ? 'text-dark' :'text-white' " (click)="switchLang(lang.current === 'en' ? 'ar' : 'en')">
         <fa-icon [icon]="globe"></fa-icon>
-        <span>AR</span>
-      </div>
+        <span>{{lang.current === 'en' ? 'AR' : 'EN'}}</span>
+      </button>
       <button class="btn btn-hero btn-normal text-white" (click)="toggleFormModal()"> Waiting List </button>
     </div>
 

@@ -3,10 +3,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPlay, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { sign } from 'crypto';
 import { FormModal } from "../form-modal/form-modal";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero-section',
-  imports: [FontAwesomeModule, FormModal],
+  imports: [FontAwesomeModule, FormModal, TranslatePipe],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.css',
 })

@@ -17,26 +17,24 @@
        <h1
          class="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-cream leading-tight mb-6 animate-fade-in"
          [style]="{ animationDelay: '0.1s' }">
-         Invest in Saudi Real Estate
-         <span class="block text-gold-light">from 100 SAR Only</span>
+         {{'heroSection.title' | translate }}
+         <span class="block text-gold-light">{{'heroSection.subtitle' | translate }}</span>
        </h1>
 
        <p class="text-lg md:text-xl text-cream/80 font-body leading-relaxed mb-10 max-w-xl animate-fade-in"
          [style]="{ animationDelay: '0.2s' }">
-         Start your investment journey in Saudi real estate easily and safely. Invest in real properties through CapNest
-         platform regulated by the Capital Market Authority (REGA). From owning zero assets to owning assets in under 3
-         minutes (120 seconds).
+         {{'heroSection.description' | translate }}
        </p>
 
        <div class="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in" [style]="{ animationDelay: '0.3s' }">
          <Button class="btn btn-hero btn-xl" (click)="toggleFormModal()">
-           Start Investing Now
+           {{'heroSection.startInvesting' | translate }}
            <fa-icon [icon]="arrowRightIcon" class="ml-2"></fa-icon>
 
          </Button>
          <a href="#how-it-works" class="btn btn-heroOutline btn-xl">
            <fa-icon [icon]="playIcon" class="mr-2"></fa-icon>
-           Discover How It Works
+           {{'heroSection.discoverHowItWorks' | translate }}
          </a>
        </div>
 

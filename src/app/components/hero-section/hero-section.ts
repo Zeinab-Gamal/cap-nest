@@ -1,7 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPlay, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { sign } from 'crypto';
 import { FormModal } from "../form-modal/form-modal";
 import { TranslatePipe } from '@ngx-translate/core';
 

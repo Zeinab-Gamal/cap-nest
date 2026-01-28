@@ -11,6 +11,28 @@
     "subtitle": "from 100 SAR Only",
     "description": "Start your investment journey in Saudi real estate easily and safely. Invest in real properties through CapNest platform regulated by the Capital Market Authority (REGA). From owning zero assets to owning assets in under 3 minutes (120 seconds).",
     "startInvesting": "Start Investing Now",
-    "discoverHowItWorks": "Discover How It Works"
+    "discoverHowItWorks": "Discover How It Works",
+    "analysticsData": {
+      "title1": "100 SAR",
+      "description1": "Minimum Investment",
+      "title2": "8-12%",
+      "description2": "Expected Yield",
+      "title3": "Pending",
+      "description3": "REGA Status",
+      "title4": "Yes",
+      "description4": "Sharia Compliant"
+    }
+  },
+  "howItWorksSection": {
+    "hint": "Simple Process",
+    "title": "How Investing Works",
+    "subtitle": "Start building your real estate portfolio in three simple steps. No complexity, no hassle.",
+    "step1Title": "Sign Up & Join",
+    "step1Description": "Create your free account and fill in your basic details to join the waiting list.",
+    "step2Title": "Choose Property",
+    "step2Description": "Browse the first available property through Digishares and choose your investment share.",
+    "step3Title": "Invest & Earn",
+    "step3Description": "Invest and start earning monthly returns from your real estate investments."
   }
+  
 }

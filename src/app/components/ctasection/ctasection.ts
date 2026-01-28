@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { sign } from 'crypto';
-import { FormModal } from "../form-modal/form-modal";
+import { FormModal } from '../form-modal/form-modal';
 
 @Component({
   selector: 'app-ctasection',

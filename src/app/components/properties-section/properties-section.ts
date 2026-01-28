@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faLocationDot, faUsers, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { FormModal } from '../form-modal/form-modal';
 
 @Component({
   selector: 'app-properties-section',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, FormModal],
   templateUrl: './properties-section.html',
   styleUrl: './properties-section.css',
 })
 export class PropertiesSection {
+  showFormModal = signal<boolean>(false);
+
   locationIcon = faLocationDot;
   usersIcon = faUsers;
   arrowTrendUpIcon = faArrowTrendUp;
@@ -47,4 +50,7 @@ export class PropertiesSection {
     //   type: 'Vacation',
     // },
   ];
+  toggleFormModal() {
+    this.showFormModal.set(!this.showFormModal());
+  }
 }

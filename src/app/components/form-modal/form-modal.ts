@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, output } from '@angular/core';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { FaIconComponent } from "@fortawesome/angular-fontawesome";
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-form-modal',
   imports: [FaIconComponent],

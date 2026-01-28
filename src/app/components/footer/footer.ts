@@ -3,32 +3,33 @@ import { faFacebookF, faInstagram, faLinkedin, faMedium } from '@fortawesome/fre
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 import { faEnvelope, faHotel } from '@fortawesome/free-solid-svg-icons';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [FaIconComponent],
+  imports: [FaIconComponent, TranslatePipe],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
 export class Footer {
   footerLinks = {
     Platform: [
-      { name: 'How It Works', href: '#how-it-works' },
-      { name: 'Why CapNest', href: '#' },
-      { name: 'Properties', href: '#properties' },
-      { name: 'Join Us', href: '#about' },
-      { name: 'Testimonials', href: '#benefits' },
+      { name: 'navLinks.howItWorks', href: '#how-it-works' },
+      { name: 'navLinks.whyCapNest', href: '#benefits' },
+      { name: 'navLinks.properties', href: '#properties' },
+      { name: 'navLinks.joinUs', href: '#joinus' },
+      { name: 'navLinks.testimonials', href: '#testimonials' },
     ],
     legal: [
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-      { name: 'Disclosures', href: '#' },
+      { name: 'footer.terms', href: '#' },
+      { name: 'footer.privacy', href: '#' },
+      { name: 'footer.cookie', href: '#' },
+      { name: 'footer.disclosures', href: '#' },
     ],
     support: [
-      { name: 'Help Center', href: '#' },
-      { name: 'Contact Us', href: '#' },
-      { name: 'Investor Resources', href: '#' },
+      { name: 'footer.helpcenter', href: '#' },
+      { name: 'footer.contactUs', href: '#' },
+      { name: 'footer.InvestorResources', href: '#' },
     ],
   };
 

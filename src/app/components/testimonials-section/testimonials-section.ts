@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-testimonials-section',
-  imports: [FaIconComponent, FontAwesomeModule],
+  imports: [FaIconComponent, FontAwesomeModule, TranslatePipe],
   templateUrl: './testimonials-section.html',
   styleUrl: './testimonials-section.css',
 })
@@ -13,28 +14,25 @@ export class TestimonialsSection {
   starIcon = faStar;
   testimonials = [
     {
-      name: 'Fatima Al-Ali',
-      role: 'Real Estate Investor, Riyadh',
-      content:
-        'I was looking for a safe way to invest in Saudi real estate. CapNest made it so easy. I invested 500 SAR in a property in Riyadh and receive a steady monthly return. I recommend it to anyone wanting to start real estate investing.',
+      name: 'testimonialsSection.testimonial1.name',
+      role: 'testimonialsSection.testimonial1.role',
+      content: 'testimonialsSection.testimonial1.quote',
       rating: 5,
-      avatar: 'FA',
+      avatar: 'testimonialsSection.testimonial1.avatar',
     },
     {
-      name: 'Khalid Al-Ahmad',
-      role: 'Software Engineer, Jeddah',
-      content:
-        "As a young professional starting my career, I didn't think I could invest in real estate. CapNest changed that. Now I have a diversified portfolio of 3 properties in different cities. The returns are much better than a savings account.",
+      name: 'testimonialsSection.testimonial2.name',
+      role: 'testimonialsSection.testimonial2.role',
+      content: 'testimonialsSection.testimonial2.quote',
       rating: 5,
-      avatar: 'KA',
+      avatar: 'testimonialsSection.testimonial2.avatar',
     },
     {
-      name: 'Noura Al-Salem',
-      role: 'Teacher, Dammam',
-      content:
-        'I wanted to build an additional income source for the future. CapNest is a trusted platform regulated by REGA, which is very important to me. I invested 1000 SAR and receive monthly income that helps me with better financial planning. Thank you CapNest!',
+      name: 'testimonialsSection.testimonial3.name',
+      role: 'testimonialsSection.testimonial3.role',
+      content: 'testimonialsSection.testimonial3.quote',
       rating: 5,
-      avatar: 'NS',
+      avatar: 'testimonialsSection.testimonial3.avatar',
     },
   ];
   getStars(rating: number): number[] {

@@ -4,7 +4,8 @@
     "whyCapNest": "Why CapNest",
     "properties": "Properties",
     "joinUs": "Join Us",
-    "testimonials": "Testimonials"
+    "testimonials": "Testimonials",
+    "btn": "Waiting list"
   },
   "heroSection": {
     "title": "Invest in Saudi Real Estate",
@@ -33,6 +34,49 @@
     "step2Description": "Browse the first available property through Digishares and choose your investment share.",
     "step3Title": "Invest & Earn",
     "step3Description": "Invest and start earning monthly returns from your real estate investments."
+  },
+  "testimonialsSection": {
+    "sectionname": "testimonials",
+    "title": "What Our Investors Say",
+    "subtitle": "Join thousands of satisfied investors building wealth through fractional real estate.",
+    "testimonial1": {
+      "quote": "I was looking for a safe way to invest in Saudi real estate. CapNest made it so easy. I invested 500 SAR in a property in Riyadh and receive a steady monthly return. I recommend it to anyone wanting to start real estate investing.",
+      "name": "Fatima Al-Al",
+      "role": "Real Estate Investor, Riyadh",
+      "avatar": "FA"
+    },
+    "testimonial2": {
+      "quote": "As a young professional starting my career, I didn't think I could invest in real estate. CapNest changed that. Now I have a diversified portfolio of 3 properties in different cities. The returns are much better than a savings account.",
+      "name": "Khalid Al-Ahmad",
+      "role": "Software Engineer, Jeddah",
+      "avatar": "KA"
+    },
+    "testimonial3": {
+      "quote": "I wanted to build an additional income source for the future. CapNest is a trusted platform regulated by REGA, which is very important to me. I invested 1000 SAR and receive monthly income that helps me with better financial planning. Thank you CapNest!",
+      "name": "Noura Al-Salem",
+      "role": "Teacher, Dammam",
+      "avatar": "NA"
+    }
+  },
+  "footer": {
+    "description": "Making real estate investment accessible to everyone through fractional ownership.",
+    "licensed": "REGA License",
+    "platforms": "Platform",
+    "howItWorks": "How It Works",
+    "whyCapNest": "Why CapNest",
+    "properties": "Properties",
+    "joinUs": "Join Us",
+    "testimonials": "Testimonials",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "disclosures": "Disclosures",
+    "support": "Support",
+    "helpcenter": "Help Center",
+    "contactUs": "Contact Us",
+    "InvestorResources": "Investor Resources",
+    "rights": "All Rights Reserved © 2024 CapNest",
+    "warning": "Investments involve risk. The value of investments can go down as well as up. Past performance is not a guarantee of future results."
   }
-  
 }

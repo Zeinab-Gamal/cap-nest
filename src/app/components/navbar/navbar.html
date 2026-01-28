@@ -27,7 +27,8 @@
         <fa-icon [icon]="globe"></fa-icon>
         <span>{{lang.current === 'en' ? 'AR' : 'EN'}}</span>
       </button>
-      <button class="btn btn-hero btn-normal text-white" (click)="toggleFormModal()"> Waiting List </button>
+      <button class="btn btn-hero btn-normal text-white" (click)="toggleFormModal()">
+        {{ 'navLinks.btn' | translate }}</button>
     </div>
 
     <fa-icon [icon]="bars" class="lg:hidden font-extrabold text-lg"

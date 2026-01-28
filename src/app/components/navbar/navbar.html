@@ -12,7 +12,8 @@
 
     <div class="hidden lg:flex items-center gap-8">
       @for (link of navLinks; track $index) {
-      <a (href)="link.href" class=" hover:text-gold transition-colors duration-200 font-body text-md cursor-pointer"
+      <a [href]="link.href" (click)="goToSection(link.href)"
+        class=" hover:text-gold transition-colors duration-200 font-body text-md cursor-pointer"
         [ngClass]="isScrolled() ? 'text-dark' :'text-white' ">
         {{ link.name }}
       </a>

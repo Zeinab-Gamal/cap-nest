@@ -29,11 +29,11 @@
        <div class="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in" [style]="{ animationDelay: '0.3s' }">
          <Button class="btn btn-hero btn-xl" (click)="toggleFormModal()">
            {{'heroSection.startInvesting' | translate }}
-           <fa-icon [icon]="arrowRightIcon" class="ml-2"></fa-icon>
+           <fa-icon [icon]="arrowRightIcon" class="ml-2 rtl:rotate-180"></fa-icon>
 
          </Button>
          <a href="#how-it-works" class="btn btn-heroOutline btn-xl">
-           <fa-icon [icon]="playIcon" class="mr-2"></fa-icon>
+           <fa-icon [icon]="playIcon" class="mr-2 rtl:rotate-180"></fa-icon>
            {{'heroSection.discoverHowItWorks' | translate }}
          </a>
        </div>
@@ -41,20 +41,28 @@
        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-cream/10 animate-fade-in text-center"
          [style]="{ animationDelay: '0.4s' }">
          <div>
-           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">{{'heroSection.analysticsData.title1' | translate }}</p>
-           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description1' | translate }}</p>
+           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">
+             {{'heroSection.analysticsData.title1' | translate }}</p>
+           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description1' | translate }}
+           </p>
          </div>
          <div>
-           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">{{'heroSection.analysticsData.title2' | translate }}</p>
-           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description2' | translate }}</p>
+           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">
+             {{'heroSection.analysticsData.title2' | translate }}</p>
+           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description2' | translate }}
+           </p>
          </div>
          <div>
-           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">{{'heroSection.analysticsData.title3' | translate }}</p>
-           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description3' | translate }}</p>
+           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">
+             {{'heroSection.analysticsData.title3' | translate }}</p>
+           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description3' | translate }}
+           </p>
          </div>
          <div>
-           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">{{'heroSection.analysticsData.title4' | translate }}</p>
-           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description4' | translate }}</p>
+           <p class="font-heading text-3xl md:text-4xl font-extrabold text-cream">
+             {{'heroSection.analysticsData.title4' | translate }}</p>
+           <p class="text-cream/80 text-sm font-body mt-1">{{'heroSection.analysticsData.description4' | translate }}
+           </p>
          </div>
        </div>
      </div>

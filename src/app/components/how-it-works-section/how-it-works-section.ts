@@ -15,15 +15,13 @@ export class HowItWorksSection {
       icon: faUserPlus,
       number: '01',
       title: 'howItWorksSection.step1Title',
-      description:
-        'howItWorksSection.step1Description',
+      description: 'howItWorksSection.step1Description',
     },
     {
       icon: faHouseCircleCheck,
       number: '02',
       title: 'howItWorksSection.step2Title',
-      description:
-        'howItWorksSection.step2Description',
+      description: 'howItWorksSection.step2Description',
     },
     {
       icon: faArrowTrendUp,

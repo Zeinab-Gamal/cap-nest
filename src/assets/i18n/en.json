@@ -35,7 +35,45 @@
     "step3Title": "Invest & Earn",
     "step3Description": "Invest and start earning monthly returns from your real estate investments."
   },
-<<<<<<< HEAD
+  "benefitsSection": {
+    "hint": "Why Choose CapNest",
+    "title": "Benefits of Fractional Ownership",
+    "description": "Experience the advantages of real estate investment without the traditional obstacles.",
+    "benefit1Title": "Low Minimum Investment",
+    "benefit1Description": "Start building your portfolio from just 100 SAR. No massive down payments required.",
+    "benefit2Title": "Diversified Portfolio",
+    "benefit2Description": "Spread your investment across multiple properties to reduce risk and maximize returns.",
+    "benefit3Title": "REGA Regulated",
+    "benefit3Description": "All investments are fully compliant with SEC regulations, ensuring your money is protected.",
+    "benefit4Title": "Professional Management",
+    "benefit4Description": "Our expert team handles property management, tenants, and maintenance – you just earn.",
+    "benefit5Title": "Monthly Income",
+    "benefit5Description": "Receive your share of rental income directly to your account every month.",
+    "benefit6Title": "Invest Anywhere",
+    "benefit6Description": "Access premium properties nationwide from the comfort of your home."
+  },
+  "propertiesSection": {
+    "hint": "Investment Opportunities",
+    "title": "Featured Properties",
+    "moreComingSoon": "More properties coming soon",
+    "viewAllProperties": "View All Properties",
+    "residential": "Residential",
+    "firstProperty": "First Property",
+    "riyadhSaudiArabia": "Riyadh, Saudi Arabia",
+    "sar": "SAR",
+    "funded": "Funded",
+    "investors": "investors",
+    "returns": "return",
+    "investFrom": "Invest from"
+  },
+  "ctaSection": {
+    "title": "Ready to Build Your",
+    "subtitle": "Real Estate Portfolio?",
+    "description": "Join thousands of investors earning passive income through fractional property ownership. Start your journey today.",
+    "joinWaitingList": "Join The Waiting List",
+    "scheduleCall": "Schedule a Call",
+    "noCreditCard": "No credit card required • Start investing in minutes"
+  },
   "testimonialsSection": {
     "sectionname": "testimonials",
     "title": "What Our Investors Say",
@@ -79,45 +117,5 @@
     "InvestorResources": "Investor Resources",
     "rights": "All Rights Reserved © 2024 CapNest",
     "warning": "Investments involve risk. The value of investments can go down as well as up. Past performance is not a guarantee of future results."
-=======
-  "benefitsSection": {
-    "hint": "Why Choose CapNest",
-    "title": "Benefits of Fractional Ownership",
-    "description": "Experience the advantages of real estate investment without the traditional obstacles.",
-    "benefit1Title": "Low Minimum Investment",
-    "benefit1Description": "Start building your portfolio from just 100 SAR. No massive down payments required.",
-    "benefit2Title": "Diversified Portfolio",
-    "benefit2Description": "Spread your investment across multiple properties to reduce risk and maximize returns.",
-    "benefit3Title": "REGA Regulated",
-    "benefit3Description": "All investments are fully compliant with SEC regulations, ensuring your money is protected.",
-    "benefit4Title": "Professional Management",
-    "benefit4Description": "Our expert team handles property management, tenants, and maintenance – you just earn.",
-    "benefit5Title": "Monthly Income",
-    "benefit5Description": "Receive your share of rental income directly to your account every month.",
-    "benefit6Title": "Invest Anywhere",
-    "benefit6Description": "Access premium properties nationwide from the comfort of your home."
-  },
-  "propertiesSection": {
-    "hint": "Investment Opportunities",
-    "title": "Featured Properties",
-    "moreComingSoon": "More properties coming soon",
-    "viewAllProperties": "View All Properties",
-    "residential": "Residential",
-    "firstProperty": "First Property",
-    "riyadhSaudiArabia": "Riyadh, Saudi Arabia",
-    "sar": "SAR",
-    "funded": "Funded",
-    "investors": "investors",
-    "returns": "return",
-    "investFrom": "Invest from"
-  },
-  "ctaSection": {
-    "title": "Ready to Build Your",
-    "subtitle": "Real Estate Portfolio?",
-    "description": "Join thousands of investors earning passive income through fractional property ownership. Start your journey today.",
-    "joinWaitingList": "Join The Waiting List",
-    "scheduleCall": "Schedule a Call",
-    "noCreditCard": "No credit card required • Start investing in minutes"
->>>>>>> d59b02333f1f93f9c9314057b76265fd1939e702
   }
 }

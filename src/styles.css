@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @import './assets/styles/buttons.css';
@@ -13,23 +13,9 @@
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(222 47% 11%);
 
-  --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(222 47% 11%);
-
-  --color-primary: hsl(222 47% 11%);
-  --color-primary-foreground: hsl(40 33% 98%);
-  --color-secondary: hsl(40 20% 94%);
-  --color-secondary-foreground: hsl(222 47% 11%);
-
-  --color-muted: hsl(40 20% 94%);
-  --color-muted-foreground: hsl(220 9% 46%);
-
-  --color-accent: hsl(30 41% 64%);
-  --color-accent-foreground: hsl(222 47% 11%);
-
-  --color-gold: #197a3d;
-  --color-gold-light: #39e374;
-  --color-gold-dark: #004d1c;
+  --color-green: #197a3d;
+  --color-green-light: #39e374;
+  --color-green-dark: #004d1c;
 
   --color-navy: hsl(222 47% 11%);
   --color-navy-light: hsl(220 30% 20%);
@@ -37,26 +23,12 @@
   --color-cream: hsl(40 33% 98%);
   --color-cream-dark: hsl(40 20% 94%);
 
-  --color-destructive: hsl(0 84% 60%);
-  --color-destructive-foreground: hsl(0 0% 100%);
-
   --color-border: hsl(40 20% 88%);
   --color-input: hsl(40 20% 88%);
   --color-ring: hsl(30 41% 64%);
 
-  --radius: 0.75rem;
-
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
-
-  --sidebar-background: 0 0% 98%;
-  --sidebar-foreground: 240 5.3% 26.1%;
-  --sidebar-primary: 240 5.9% 10%;
-  --sidebar-primary-foreground: 0 0% 98%;
-  --sidebar-accent: 240 4.8% 95.9%;
-  --sidebar-accent-foreground: 240 5.9% 10%;
-  --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --font-heading: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -87,23 +59,6 @@ h6 {
   font-family: var(--font-body);
 }
 
-.text-gradient-gold {
-  @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
-}
-
-.bg-gradient-hero {
-  background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--navy-light)) 100%);
-}
-
-.bg-gradient-gold {
-  background: linear-gradient(
-    135deg,
-    hsl(var(--gold-dark)) 0%,
-    hsl(var(--gold)) 50%,
-    hsl(var(--gold-light)) 100%
-  );
-}
-
 .shadow-elegant {
   box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
 }
@@ -113,7 +68,7 @@ h6 {
 }
 
 .section-padding {
-  @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  @apply px-6 py-20 md:px-12 lg:px-12 lg:py-28;
 }
 
 .container {

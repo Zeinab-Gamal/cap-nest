@@ -1,13 +1,13 @@
-<section id="benefits" class="bg-linear-to-b from-gold-dark to-gold relative overflow-hidden  ">
+<section id="benefits" class="bg-linear-to-b from-green-dark to-green relative overflow-hidden  ">
 
   <div class="absolute inset-0 opacity-5">
-    <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-green rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-green rounded-full blur-3xl"></div>
   </div>
 
   <div class="section-padding container mx-auto  relative z-10">
     <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-gold-light font-body text-sm font-medium tracking-wider uppercase">
+      <span class="text-green-light font-body text-sm font-medium tracking-wider uppercase">
         Why Choose CapNest
       </span>
       <h2 class="font-heading text-4xl md:text-5xl font-semibold text-cream mt-4 mb-6">
@@ -22,11 +22,11 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (benefit of benefits; track $index ; let i = $index) {
       <div
-        class="group p-8 rounded-2xl bg-cream/5 border border-cream/10 backdrop-blur-sm hover:bg-cream/10 hover:border-gold/30 transition-all duration-300"
+        class="group p-8 rounded-2xl bg-cream/5 border border-cream/10 backdrop-blur-sm hover:bg-cream/10 hover:border-green/30 transition-all duration-300"
         [style.animation-delay]="i * 0.1 + 's'">
         <div
-          class="w-14 h-14 rounded-xl bg-cream/80 flex items-center justify-center mb-6 group-hover:bg-cream transition-colors duration-300">
-          <fa-icon [icon]="benefit.icon" class="text-xl text-gold" />
+          class="w-14 h-14 rounded-xl bg-cream flex items-center justify-center mb-6 group-hover:bg-cream/90 transition-colors duration-300">
+          <fa-icon [icon]="benefit.icon" class="text-xl text-green" />
         </div>
 
         <h3 class="font-heading text-xl font-semibold text-cream mb-3">

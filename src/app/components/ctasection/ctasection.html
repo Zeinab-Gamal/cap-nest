@@ -1,8 +1,8 @@
  <section id="joinus"
-   class="section-padding scroll-mt-24 bg-linear-to-b from-gold-dark to-gold relative overflow-hidden">
+   class="section-padding scroll-mt-24 bg-linear-to-b from-green-dark to-green relative overflow-hidden">
    <div class="absolute inset-0">
      <div
-       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-gold/10 rounded-full blur-3xl">
+       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-green/10 rounded-full blur-3xl">
      </div>
    </div>
 
@@ -10,7 +10,7 @@
      <div class="max-w-3xl mx-auto text-center">
        <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-cream mb-6">
          Ready to Build Your
-         <span class="text-gold-light block">Real Estate Portfolio?</span>
+         <span class="text-green-light block">Real Estate Portfolio?</span>
        </h2>
        <p class="text-cream/70 font-body text-lg md:text-xl mb-10 max-w-xl mx-auto">
          Join thousands of investors earning passive income through fractional property ownership. Start your journey
@@ -34,5 +34,5 @@
    </div>
  </section>
  @if(showFormModal()) {
- <app-form-modal (close)="toggleFormModal()"></app-form-modal>
+ <app-form-modal (onClose)="toggleFormModal()" />
  }

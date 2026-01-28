@@ -2,7 +2,7 @@ import { Component, HostListener, signal } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGlobe, faBars } from '@fortawesome/free-solid-svg-icons';
-import { FormModal } from "../form-modal/form-modal";
+import { FormModal } from '../form-modal/form-modal';
 @Component({
   selector: 'app-navbar',
   imports: [NgClass, FontAwesomeModule, FormModal],

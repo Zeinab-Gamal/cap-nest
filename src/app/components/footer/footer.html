@@ -1,9 +1,9 @@
-<footer class="bg-gold-dark ">
+<footer class="bg-green-dark ">
   <div class="container section-padding mx-auto">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-12 pb-12 border-b border-cream/10">
       <div class="col-span-2 md:col-span-1">
         <a href="#" class="flex items-center gap-2 mb-6">
-          <div class="w-10 h-10 rounded-lg bg-linear-to-r from-gold to-gold-light flex items-center justify-center">
+          <div class="w-10 h-10 rounded-lg bg-linear-to-r from-green to-green-light flex items-center justify-center">
             <span class="font-heading font-bold text-navy text-xl">C</span>
           </div>
           <span class="font-heading text-2xl font-semibold text-cream ">
@@ -18,7 +18,7 @@
         </p>
         <div
           class="inline-flex items-center gap-2 p-3 py-1 rounded-full bg-cream/10 border border-cream/20 backdrop-blur-sm mb-8 animate-fade-in w-full">
-          <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+          <span class="w-2 h-2 rounded-full bg-green animate-pulse"></span>
           <span class="text-cream/90 text-sm font-body">
             REGA Sandbox
           </span>
@@ -34,7 +34,7 @@
           @for (link of footerLinks.Platform; track $index) {
           <li>
             <a [href]="link.href"
-              class="text-cream/90 hover:text-gold transition-colors duration-200 font-body text-sm">
+              class="text-cream/90 hover:text-green transition-colors duration-200 font-body text-sm">
               {{link.name}}
             </a>
           </li>
@@ -48,7 +48,7 @@
           @for (link of footerLinks.legal; track $index) {
           <li>
             <a [href]="link.href"
-              class="text-cream/90 hover:text-gold transition-colors duration-200 font-body text-sm">
+              class="text-cream/90 hover:text-green transition-colors duration-200 font-body text-sm">
               {{link.name}}
             </a>
           </li>
@@ -62,7 +62,7 @@
           @for (link of footerLinks.support; track $index) {
           <li>
             <a [href]="link.href"
-              class="text-cream/90 hover:text-gold transition-colors duration-200 font-body text-sm">
+              class="text-cream/90 hover:text-green transition-colors duration-200 font-body text-sm">
               {{link.name}}
             </a>
           </li>
@@ -71,7 +71,7 @@
             @for (social of socialLinks; track $index) {
 
             <a [href]="social.href"
-              class="px-2 py-1 rounded-lg bg-cream/5 border border-cream/10 hover:bg-gold hover:border-gold transition-all  group w-fit">
+              class="px-2 py-1 rounded-lg bg-cream/5 border border-cream/10 hover:bg-green hover:border-green transition-all  group w-fit">
               <fa-icon [icon]="social.icon" class="text-cream/70 group-hover:text-navy text-lg"></fa-icon>
             </a>
             }

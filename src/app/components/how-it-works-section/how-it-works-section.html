@@ -1,7 +1,7 @@
  <section id="how-it-works" class="bg-cream-dark">
    <div class="section-padding  container mx-auto">
      <div class="text-center max-w-2xl mx-auto mb-16 ">
-       <span class="text-gold font-body text-sm font-medium tracking-wider uppercase">
+       <span class="text-green font-body text-sm font-medium tracking-wider uppercase">
          Simple Process
        </span>
        <h2 class="font-heading text-4xl md:text-5xl font-semibold text-navy mt-4 mb-6">
@@ -16,20 +16,20 @@
        @for (step of steps; track $index; let i = $index) {
        <div class="relative group ">
          @if(i < steps.length - 1){ <div
-           class="hidden lg:block absolute top-16 left-[60%] w-full h-0.5 bg-linear-to-r from-gold/50 to-transparent ">
+           class="hidden lg:block absolute top-16 left-[60%] w-full h-0.5 bg-linear-to-r from-green/50 to-transparent z-1 ">
        </div>
 
        }
        <div
-         class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-shadow duration-300 relative overflow-hidden h-full flex flex-col">
+         class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-shadow duration-300 relative overflow-hidden h-full flex flex-col z-10">
 
          <span
-           class="absolute -top-4 right-4 font-heading text-[120px] font-bold text-gold-dark leading-none select-none ">
+           class="absolute -top-1 right-4 font-heading text-[120px] font-bold text-green-dark leading-none select-none ">
            {{step.number}}
          </span>
 
          <div
-           class="w-16 h-16 rounded-xl bg-linear-to-r from-gold to-cream flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ">
+           class="w-16 h-16 rounded-xl bg-linear-to-r from-green to-cream flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ">
            <fa-icon [icon]="step.icon" class="text-2xl text-navy" />
          </div>
 

@@ -3,15 +3,15 @@
      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
        <div>
          <span class="text-green font-body text-sm font-medium tracking-wider uppercase">
-           Investment Opportunities
+           {{'propertiesSection.hint' | translate }}
          </span>
          <h2 class="font-heading text-4xl md:text-5xl font-semibold text-navy mt-4">
-           Featured Properties
+           {{'propertiesSection.title' | translate }}
          </h2>
        </div>
        <Button
          class="btn border border-input bg-background self-start md:self-auto  text-green-dark px-6 py-3 disabled ">
-         More properties coming soon
+         {{'propertiesSection.moreComingSoon' | translate }}
        </Button>
      </div>
 
@@ -24,7 +24,7 @@
              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
            <div class="absolute top-4 left-4">
              <span class="px-3 py-1 bg-green-light text-navy text-xs font-semibold rounded-full">
-               {{property.type}}
+               {{property.type | translate }}
              </span>
            </div>
            <div class="absolute bottom-0 inset-x-0 h-20 bg-linear-to-t from-navy/80 to-transparent"></div>
@@ -34,21 +34,21 @@
            <div class="flex items-start justify-between mb-4">
              <div>
                <h3 class="font-heading text-xl font-semibold text-navy">
-                 {{property.title}}
+                 {{property.title | translate }}
                </h3>
                <div class="flex items-center gap-1 text-muted-foreground mt-1">
                  <fa-icon [icon]="locationIcon" class="text-sm" />
-                 <span class="text-sm font-body">{{property.location}}</span>
+                 <span class="text-sm font-body">{{property.location | translate }}</span>
                </div>
              </div>
              <p class="font-heading text-xl font-semibold text-navy">
-               {{property.price}}
+               {{property.price}} {{ 'propertiesSection.sar' | translate }}
              </p>
            </div>
 
            <div class="mb-4">
              <div class="flex justify-between text-sm font-body mb-2">
-               <span class="text-muted-foreground">Funded</span>
+               <span class="text-muted-foreground">{{'propertiesSection.funded' | translate }}</span>
                <span class="text-navy font-medium">{{property.funded}}%</span>
              </div>
              <div class="h-2 bg-cream-dark rounded-full overflow-hidden">
@@ -62,20 +62,20 @@
                <fa-icon [icon]="usersIcon" class="text-sm text-green" />
 
                <span class="text-muted-foreground font-body">
-                 {{property.investors}} investors
+                 {{property.investors}} {{'propertiesSection.investors' | translate }}
                </span>
              </div>
              <div class="flex items-center gap-1 text-sm">
                <fa-icon [icon]="arrowTrendUpIcon" class="text-sm text-green" />
 
                <span class="text-navy font-semibold font-body">
-                 {{property.returns}} return
+                 {{property.returns}} {{ 'propertiesSection.returns' | translate }}
                </span>
              </div>
            </div>
 
            <Button class="btn btn-green btn-lg w-full mt-6" (click)="toggleFormModal()">
-             Invest from {{property.minInvestment}}
+             {{'propertiesSection.investFrom' | translate }} {{property.minInvestment}} {{ 'propertiesSection.sar' | translate }}
            </Button>
          </div>
        </div>

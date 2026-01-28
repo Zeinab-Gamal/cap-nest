@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faUserPlus, faHouseCircleCheck, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-how-it-works-section',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, TranslatePipe],
   templateUrl: './how-it-works-section.html',
   styleUrl: './how-it-works-section.css',
 })
@@ -13,22 +14,22 @@ export class HowItWorksSection {
     {
       icon: faUserPlus,
       number: '01',
-      title: 'Sign Up & Join',
+      title: 'howItWorksSection.step1Title',
       description:
-        'Create your free account and fill in your basic details to join the waiting list.',
+        'howItWorksSection.step1Description',
     },
     {
       icon: faHouseCircleCheck,
       number: '02',
-      title: 'Choose Property',
+      title: 'howItWorksSection.step2Title',
       description:
-        'Browse the first available property through Digishares and choose your investment share.',
+        'howItWorksSection.step2Description',
     },
     {
       icon: faArrowTrendUp,
       number: '03',
-      title: 'Invest & Earn',
-      description: 'Invest and start earning monthly returns from your real estate investments.',
+      title: 'howItWorksSection.step3Title',
+      description: 'howItWorksSection.step3Description',
     },
   ];
 }

@@ -8,10 +8,11 @@ import {
   faGlobe,
   faClock,
 } from '@fortawesome/free-solid-svg-icons';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-benefits-section',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, TranslatePipe],
   templateUrl: './benefits-section.html',
   styleUrl: './benefits-section.css',
 })
@@ -19,37 +20,33 @@ export class BenefitsSection {
   benefits = [
     {
       icon: faWallet,
-      title: 'Low Minimum Investment',
-      description:
-        'Start building your portfolio from just 100 SAR. No massive down payments required.',
+      title: 'benefitsSection.benefit1Title',
+      description: 'benefitsSection.benefit1Description',
     },
     {
       icon: faBarChart,
-      title: 'Diversified Portfolio',
-      description:
-        'Spread your investment across multiple properties to reduce risk and maximize returns.',
+      title: 'benefitsSection.benefit2Title',
+      description: 'benefitsSection.benefit2Description',
     },
     {
       icon: faShield,
-      title: 'REGA Regulated',
-      description:
-        'All investments are fully compliant with SEC regulations, ensuring your money is protected.',
+      title: 'benefitsSection.benefit3Title',
+      description: 'benefitsSection.benefit3Description',
     },
     {
       icon: faUsers,
-      title: 'Professional Management',
-      description:
-        'Our expert team handles property management, tenants, and maintenance – you just earn.',
+      title: 'benefitsSection.benefit4Title',
+      description: 'benefitsSection.benefit4Description',
     },
     {
       icon: faClock,
-      title: 'Monthly Income',
-      description: 'Receive your share of rental income directly to your account every month.',
+      title: 'benefitsSection.benefit5Title',
+      description: 'benefitsSection.benefit5Description',
     },
     {
       icon: faGlobe,
-      title: 'Invest Anywhere',
-      description: 'Access premium properties nationwide from the comfort of your home.',
+      title: 'benefitsSection.benefit6Title',
+      description: 'benefitsSection.benefit6Description',
     },
   ];
 }

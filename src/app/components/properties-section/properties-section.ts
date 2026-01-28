@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faLocationDot, faUsers, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
 import { FormModal } from '../form-modal/form-modal';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-properties-section',
-  imports: [FontAwesomeModule, FormModal],
+  imports: [FontAwesomeModule, FormModal, TranslatePipe],
   templateUrl: './properties-section.html',
   styleUrl: './properties-section.css',
 })
@@ -18,14 +19,14 @@ export class PropertiesSection {
   properties = [
     {
       image: '/assets/imgs/property-1.jpg',
-      title: 'First Property',
-      location: 'Riyadh, Saudi Arabia',
-      price: 'SAR 1,200,000',
-      minInvestment: 'SAR 100',
+      title: 'propertiesSection.firstProperty',
+      location: 'propertiesSection.riyadhSaudiArabia',
+      price: '1,200,000',
+      minInvestment: '100',
       funded: 72,
       investors: 148,
       returns: '12.4%',
-      type: 'Residential',
+      type: 'propertiesSection.residential',
     },
     // {
     //   image: '/assets/imgs/property-2.jpg',

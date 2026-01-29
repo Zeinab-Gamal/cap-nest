@@ -35,9 +35,6 @@
   --font-body: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-* {
-  @apply border-border;
-}
 html {
   scroll-behavior: smooth;
 }

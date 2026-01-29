@@ -1,7 +1,7 @@
 <section id="testimonials" class="bg-cream-dark ">
   <div class="section-padding container  mx-auto ">
     <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-green font-body text-sm font-medium tracking-wider uppercase">
+      <span class="text-gold font-body text-sm font-medium tracking-wider uppercase">
         {{'testimonialsSection.sectionname' | translate }}
       </span>
       <h2 class="font-heading text-4xl md:text-5xl font-semibold text-green-dark mt-4 mb-6">
@@ -18,7 +18,7 @@
         <div class="flex gap-1 mb-6">
 
           @for(star of getStars(testimonial.rating) ; track $index){
-          <fa-icon [icon]="starIcon" class="text-lg fill-green text-green" />
+          <fa-icon [icon]="starIcon" class="text-lg fill-gold text-gold" />
           }
         </div>
 

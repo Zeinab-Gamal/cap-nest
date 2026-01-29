@@ -8,10 +8,10 @@
 }
 
 .btn-hero {
-  @apply bg-linear-to-r from-green  to-green-light text-navy font-semibold hover:shadow-lg hover:shadow-green/30 hover:scale-[1.02] active:scale-[0.98];
+  @apply bg-linear-to-r from-green-dark  to-green-light/85 to-95% text-cream font-semibold hover:shadow-lg hover:shadow-green/30 hover:scale-[1.02] active:scale-[0.98];
 }
 .btn-heroOutline {
-  @apply border-2 border-cream/30 text-cream hover:bg-cream/10 hover:border-cream/50 backdrop-blur-sm;
+  @apply border-2 border-gold text-gold hover:bg-cream/10  hover:text-white backdrop-blur-sm;
 }
 .btn-green {
   @apply bg-green-dark text-cream font-semibold hover:bg-green hover:shadow-md;

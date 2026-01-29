@@ -13,12 +13,16 @@
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(222 47% 11%);
 
-  --color-green: #197a3d;
-  --color-green-light: #39e374;
-  --color-green-dark: #004d1c;
+  --color-green: #338770;
+  --color-green-light: #3ca884;
+  --color-green-dark: #0b2e24;
 
-  --color-navy: hsl(222 47% 11%);
-  --color-navy-light: hsl(220 30% 20%);
+  --color-gold: hsl(30 41% 64%);
+  --color-gold-light: #dbbb70;
+  --color-gold-dark: #cc9560;
+
+  --color-navy: #010d0a;
+  --color-navy-light: #051f19;
 
   --color-cream: hsl(40 33% 98%);
   --color-cream-dark: hsl(40 20% 94%);

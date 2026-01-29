@@ -1,0 +1,121 @@
+{
+  "navLinks": {
+    "howItWorks": "How It Works",
+    "whyCapNest": "Why CapNest",
+    "properties": "Properties",
+    "joinUs": "Join Us",
+    "testimonials": "Testimonials",
+    "btn": "Waiting list"
+  },
+  "heroSection": {
+    "title": "Invest in Saudi Real Estate",
+    "subtitle": "from 100 SAR Only",
+    "description": "Start your investment journey in Saudi real estate easily and safely. Invest in real properties through CapNest platform regulated by the Capital Market Authority (REGA). From owning zero assets to owning assets in under 3 minutes (120 seconds).",
+    "startInvesting": "Start Investing Now",
+    "discoverHowItWorks": "Discover How It Works",
+    "analysticsData": {
+      "title1": "100 SAR",
+      "description1": "Minimum Investment",
+      "title2": "8-12%",
+      "description2": "Expected Yield",
+      "title3": "Pending",
+      "description3": "REGA Status",
+      "title4": "Yes",
+      "description4": "Sharia Compliant"
+    }
+  },
+  "howItWorksSection": {
+    "hint": "Simple Process",
+    "title": "How Investing Works",
+    "subtitle": "Start building your real estate portfolio in three simple steps. No complexity, no hassle.",
+    "step1Title": "Sign Up & Join",
+    "step1Description": "Create your free account and fill in your basic details to join the waiting list.",
+    "step2Title": "Choose Property",
+    "step2Description": "Browse the first available property through Digishares and choose your investment share.",
+    "step3Title": "Invest & Earn",
+    "step3Description": "Invest and start earning monthly returns from your real estate investments."
+  },
+  "benefitsSection": {
+    "hint": "Why Choose CapNest",
+    "title": "Benefits of Fractional Ownership",
+    "description": "Experience the advantages of real estate investment without the traditional obstacles.",
+    "benefit1Title": "Low Minimum Investment",
+    "benefit1Description": "Start building your portfolio from just 100 SAR. No massive down payments required.",
+    "benefit2Title": "Diversified Portfolio",
+    "benefit2Description": "Spread your investment across multiple properties to reduce risk and maximize returns.",
+    "benefit3Title": "REGA Regulated",
+    "benefit3Description": "All investments are fully compliant with SEC regulations, ensuring your money is protected.",
+    "benefit4Title": "Professional Management",
+    "benefit4Description": "Our expert team handles property management, tenants, and maintenance – you just earn.",
+    "benefit5Title": "Monthly Income",
+    "benefit5Description": "Receive your share of rental income directly to your account every month.",
+    "benefit6Title": "Invest Anywhere",
+    "benefit6Description": "Access premium properties nationwide from the comfort of your home."
+  },
+  "propertiesSection": {
+    "hint": "Investment Opportunities",
+    "title": "Featured Properties",
+    "moreComingSoon": "More properties coming soon",
+    "viewAllProperties": "View All Properties",
+    "residential": "Residential",
+    "firstProperty": "First Property",
+    "riyadhSaudiArabia": "Riyadh, Saudi Arabia",
+    "sar": "SAR",
+    "funded": "Funded",
+    "investors": "investors",
+    "returns": "return",
+    "investFrom": "Invest from"
+  },
+  "ctaSection": {
+    "title": "Ready to Build Your",
+    "subtitle": "Real Estate Portfolio?",
+    "description": "Join thousands of investors earning passive income through fractional property ownership. Start your journey today.",
+    "joinWaitingList": "Join The Waiting List",
+    "scheduleCall": "Schedule a Call",
+    "noCreditCard": "No credit card required • Start investing in minutes"
+  },
+  "testimonialsSection": {
+    "sectionname": "testimonials",
+    "title": "What Our Investors Say",
+    "subtitle": "Join thousands of satisfied investors building wealth through fractional real estate.",
+    "testimonial1": {
+      "quote": "I was looking for a safe way to invest in Saudi real estate. CapNest made it so easy. I invested 500 SAR in a property in Riyadh and receive a steady monthly return. I recommend it to anyone wanting to start real estate investing.",
+      "name": "Fatima Al-Al",
+      "role": "Real Estate Investor, Riyadh",
+      "avatar": "FA"
+    },
+    "testimonial2": {
+      "quote": "As a young professional starting my career, I didn't think I could invest in real estate. CapNest changed that. Now I have a diversified portfolio of 3 properties in different cities. The returns are much better than a savings account.",
+      "name": "Khalid Al-Ahmad",
+      "role": "Software Engineer, Jeddah",
+      "avatar": "KA"
+    },
+    "testimonial3": {
+      "quote": "I wanted to build an additional income source for the future. CapNest is a trusted platform regulated by REGA, which is very important to me. I invested 1000 SAR and receive monthly income that helps me with better financial planning. Thank you CapNest!",
+      "name": "Noura Al-Salem",
+      "role": "Teacher, Dammam",
+      "avatar": "NA"
+    }
+  },
+  "footer": {
+    "description": "Making real estate investment accessible to everyone through fractional ownership.",
+    "licensed": "REGA License",
+    "platforms": "Platform",
+    "howItWorks": "How It Works",
+    "whyCapNest": "Why CapNest",
+    "properties": "Properties",
+    "joinUs": "Join Us",
+    "testimonials": "Testimonials",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "disclosures": "Disclosures",
+    "support": "Support",
+    "helpcenter": "Help Center",
+    "contactUs": "Contact Us",
+    "InvestorResources": "Investor Resources",
+    "rights": "All Rights Reserved © 2024 CapNest",
+    "warning": "Investments involve risk. The value of investments can go down as well as up. Past performance is not a guarantee of future results."
+  }
+}

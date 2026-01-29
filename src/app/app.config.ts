@@ -1,13 +1,15 @@
-import { ApplicationConfig, inject, PLATFORM_ID, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 
 import {provideTranslateService} from "@ngx-translate/core";
-import {provideTranslateHttpLoader} from "@ngx-translate/http-loader";
 import { provideHttpClient } from '@angular/common/http';
-import { isPlatformBrowser } from '@angular/common';
+import { TranslateLoader } from '@ngx-translate/core';
+import { of } from 'rxjs';
+import ar from '../assets/i18n/ar.json';
+import en from '../assets/i18n/en.json';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,14 +17,14 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes), provideClientHydration(withEventReplay()),
     provideHttpClient(),
     provideTranslateService({
-      loader: isPlatformBrowser(inject(PLATFORM_ID))
-        ? provideTranslateHttpLoader({
-            prefix: '/assets/i18n/',
-            suffix: '.json',
-          })
-        : undefined,
+      loader: {
+      provide: TranslateLoader,
+      useValue: {
+          getTranslation: (lang: string) => of(lang === 'ar' ? ar : en)
+        }
+      },
       fallbackLang: 'en',
-      lang: 'en',
-    }),
+      lang: 'en'
+    })
   ]
 };

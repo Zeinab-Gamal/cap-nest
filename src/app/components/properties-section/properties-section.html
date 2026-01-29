@@ -2,7 +2,7 @@
    <div class="container mx-auto section-padding ">
      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
        <div>
-         <span class="text-green font-body text-sm font-medium tracking-wider uppercase">
+         <span class="text-gold-dark font-body text-sm font-medium tracking-wider uppercase">
            {{'propertiesSection.hint' | translate }}
          </span>
          <h2 class="font-heading text-4xl md:text-5xl font-semibold text-navy mt-4">
@@ -23,7 +23,7 @@
            <img [src]="property.image" alt={{property.title}}
              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
            <div class="absolute top-4 left-4">
-             <span class="px-3 py-1 bg-green-light text-navy text-xs font-semibold rounded-full">
+             <span class="px-3 py-1 bg-gold text-navy text-xs font-semibold rounded-full">
                {{property.type | translate }}
              </span>
            </div>
@@ -52,21 +52,21 @@
                <span class="text-navy font-medium">{{property.funded}}%</span>
              </div>
              <div class="h-2 bg-cream-dark rounded-full overflow-hidden">
-               <div class="h-full bg-linear-to-r from-green-dark to-green rounded-full transition-all duration-500"
+               <div class="h-full bg-linear-to-r from-gold-dark to-gold-light rounded-full transition-all duration-500"
                  [style.width.%]="property.funded"> </div>
              </div>
            </div>
 
            <div class="flex items-center justify-between pt-4 border-t border-border">
              <div class="flex items-center gap-1 text-sm">
-               <fa-icon [icon]="usersIcon" class="text-sm text-green" />
+               <fa-icon [icon]="usersIcon" class="text-sm text-gold" />
 
                <span class="text-muted-foreground font-body">
                  {{property.investors}} {{'propertiesSection.investors' | translate }}
                </span>
              </div>
              <div class="flex items-center gap-1 text-sm">
-               <fa-icon [icon]="arrowTrendUpIcon" class="text-sm text-green" />
+               <fa-icon [icon]="arrowTrendUpIcon" class="text-sm text-gold" />
 
                <span class="text-navy font-semibold font-body">
                  {{property.returns}} {{ 'propertiesSection.returns' | translate }}
@@ -74,7 +74,7 @@
              </div>
            </div>
 
-           <Button class="btn btn-green btn-lg w-full mt-6" (click)="toggleFormModal()">
+           <Button class="btn btn-hero btn-lg w-full mt-6" (click)="toggleFormModal()">
              {{'propertiesSection.investFrom' | translate }} {{property.minInvestment}} {{ 'propertiesSection.sar' | translate }}
            </Button>
          </div>

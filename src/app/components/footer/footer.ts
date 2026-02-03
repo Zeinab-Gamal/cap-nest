@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { faFacebookF, faInstagram, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedin, faMedium, faTwitter, faReddit, faSnapchat, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
-import { faEnvelope, faHotel } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHotel, faT } from '@fortawesome/free-solid-svg-icons';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
@@ -35,10 +35,13 @@ export class Footer {
 
   socialLinks = [
     { icon: faLinkedin, href: 'https://www.linkedin.com/company/capnest' },
-    { icon: faFacebookF, href: 'https://www.facebook.com/cap.nest/' },
-    { icon: faInstagram, href: 'https://www.instagram.com/capnest' },
-    { icon: faMedium, href: 'https://medium.com/@capnest' },
-    { icon: faHotel, href: 'https://www.crunchbase.com/organization/capnest' },
-    { icon: faEnvelope, href: 'info@capnest.sa' },
+    { icon: faHotel, href: 'https://www.crunchbase.com/organization/capnest'},
+    { icon: faTwitter, href: 'https://x.com/capnest_ksa' },
+    { icon: faMedium, href: 'https://medium.com/@capnestsm' },
+    { icon: faReddit, href: 'https://www.reddit.com/user/CapNest_Official/' },
+    { icon: faInstagram, href: 'https://www.instagram.com/capnest.sa/' },
+    { icon: faFacebookF, href: 'https://www.facebook.com/people/Capnest/61586988209470/' },
+    { icon: faSnapchat, href: 'https://www.snapchat.com/@capnest1' },
+    { icon: faTiktok, href: 'https://www.tiktok.com/@capnest1' },
   ];
 }

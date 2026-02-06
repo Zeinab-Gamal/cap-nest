@@ -2,12 +2,6 @@
   [ngClass]="isScrolled() ? 'bg-cream-dark text-black backdrop-blur-md shadow-elegant py-4 ' : 'bg-transparent py-6'">
   <div class="container flex items-center justify-between  mx-auto px-6 md:px-12 lg:px-12 ">
     <a href="#" class="flex items-center gap-2 rtl:[direction:ltr]">
-      <!-- <div class="w-10 h-10 rounded-lg bg-linear-to-r from-green-dark to-green-light flex items-center justify-center">
-        <span class="font-heading font-bold  text-xl ">C</span>
-      </div>
-      <span class="font-heading text-2xl font-semibold transition-all "
-        [ngClass]="isScrolled() ? 'text-dark' :'text-cream' ">
-        CapNest </span> -->
         @if (isScrolled()) {
           <img src="/assets/imgs/logo-dark.png" alt="Luxury real estate investment" class="w-full h-16 object-cover" />
         } @else {
@@ -36,7 +30,7 @@
       <button class="btn btn-hero btn-normal text-white" (click)="toggleFormModal()">
         {{ 'navLinks.btn' | translate }}
       </button>
-      <a class="btn btn-heroOutline btn-normal "  href="https://investor-capnest-dev.digishares.tech/" target="_blank"> {{ 'navLinks.signUpBtn' |translate }}
+      <a class="btn btn-heroOutline btn-normal "  href="https://investor-capnest-dev.digishares.tech/" target="_blank"> {{ 'navLinks.loginBtn' |translate }}
       </a>
       
     </div>
@@ -66,7 +60,7 @@
       </div>
     
       <div class="flex flex-col gap-3 pt-4 border-t border-cream/10">
-         <a class="btn btn-heroOutline btn-normal"  href="https://investor-capnest-dev.digishares.tech/" target="_blank"> {{ 'navLinks.signUpBtn' |translate }}
+         <a class="btn btn-heroOutline btn-normal"  href="https://investor-capnest-dev.digishares.tech/" target="_blank"> {{ 'navLinks.loginBtn' |translate }}
       </a>
           <button class="btn btn-hero btn-normal text-white" (click)="toggleFormModal()"> {{ 'navLinks.btn' | translate }}
         </button>

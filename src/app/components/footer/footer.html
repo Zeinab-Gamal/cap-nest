@@ -3,13 +3,14 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-cream/10">
       <div class="col-span-2 md:col-span-1">
         <a href="#" class="flex items-center gap-2 mb-6">
-          <div
+          <!-- <div
             class="w-10 h-10 rounded-lg bg-linear-to-r from-green-dark to-green-light flex items-center justify-center">
             <span class="font-heading font-bold  text-xl">C</span>
           </div>
           <span class="font-heading text-2xl font-semibold text-cream ">
             CapNest
-          </span>
+          </span> -->
+          <img src="/assets/imgs/logo-light.png" alt="CapNest" class="w-48 max-w-full" />
         </a>
         <p class="text-cream/90 font-body text-sm leading-relaxed mb-6">
           {{ 'footer.description' | translate }}</p>
@@ -70,7 +71,7 @@
           }
           <div class=" mt-4 w-full flex flex-wrap gap-2 flex-1">
             @for (social of socialLinks; track $index) {
-            <a [href]="social.href"
+            <a [href]="social.href" target="_blank"
               class="px-2 py-1 rounded-lg bg-cream/5 border border-cream/10 hover:bg-cream/20 hover:border-gold transition-all  group w-fit">
               <fa-icon [icon]="social.icon" class="text-gold group-hover:text-navy text-lg"></fa-icon>
             </a>

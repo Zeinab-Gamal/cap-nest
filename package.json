@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:cap-nest": "node dist/cap-nest/server/server.mjs"
+    "serve:ssr:cap-nest": "node dist/cap-nest/server/server.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "prettier": {
     "printWidth": 100,
@@ -53,6 +55,7 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "wrangler": "^4.81.1"
   }
 }

@@ -55,4 +55,8 @@
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
+  "dependencies": {
+  ...
+  "@netlify/angular-runtime": "^3"
+}
 }
